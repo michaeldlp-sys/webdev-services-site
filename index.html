@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Northstar Web Systems | Websites, CRM, Process Improvement</title>
+  <meta name="description" content="We build modern websites, CRM systems, and process improvements that help businesses scale with less friction." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Manrope:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#">Northstar Web Systems</a>
+      <nav>
+        <a href="#services">Services</a>
+        <a href="#approach">Approach</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">Web Development Services</p>
+          <h1>Build Better Digital Operations, Not Just a Website.</h1>
+          <p class="lead">We help growing businesses launch high-performing websites, organize customer operations in CRM, and streamline internal workflows so teams move faster.</p>
+          <div class="hero-actions">
+            <a class="cta" href="#contact">Book a Discovery Call</a>
+            <a class="cta secondary" href="#services">See Services</a>
+          </div>
+        </div>
+        <aside class="hero-card">
+          <h2>What we deliver</h2>
+          <ul>
+            <li>Business websites built for conversion</li>
+            <li>CRM setup and workflow automation</li>
+            <li>Operational process mapping and refinement</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <section id="services" class="section">
+      <div class="container">
+        <h2>Core Services</h2>
+        <div class="cards">
+          <article class="card">
+            <h3>Website Development</h3>
+            <p>Fast, responsive websites with clear messaging, SEO-ready structure, and clean code.</p>
+          </article>
+          <article class="card">
+            <h3>CRM Implementation</h3>
+            <p>Pipeline setup, lead routing, follow-up automations, and reporting dashboards tailored to your team.</p>
+          </article>
+          <article class="card">
+            <h3>Process Improvement</h3>
+            <p>We analyze bottlenecks and redesign repeatable workflows to reduce waste and improve delivery speed.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt">
+      <div class="container stat-grid">
+        <article class="stat-card">
+          <h3>Clarity First</h3>
+          <p>Every project starts with a practical roadmap so teams know exactly what gets built and why.</p>
+        </article>
+        <article class="stat-card">
+          <h3>Systems Thinking</h3>
+          <p>We connect marketing, sales, and operations so your website and CRM work together.</p>
+        </article>
+        <article class="stat-card">
+          <h3>Execution Focus</h3>
+          <p>Small, high-impact releases that ship fast and improve with real usage data.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="approach" class="section">
+      <div class="container">
+        <h2>Simple 3-Step Approach</h2>
+        <ol class="steps">
+          <li><strong>Diagnose:</strong> Understand goals, constraints, and current systems.</li>
+          <li><strong>Build:</strong> Implement website and CRM with practical automation.</li>
+          <li><strong>Optimize:</strong> Track results and improve processes continuously.</li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container contact-grid">
+        <div class="contact-box">
+          <h2>Start with a focused roadmap</h2>
+          <p>Tell us where your operations are stuck and we will propose a step-by-step implementation plan.</p>
+          <p><strong>Email:</strong> hello@northstarwebsystems.com</p>
+          <p><strong>Turnaround:</strong> Initial response within 1 business day</p>
+        </div>
+
+        <form class="contact-form" id="leadForm" novalidate>
+          <h3>Request a Consultation</h3>
+          <label for="name">Full Name</label>
+          <input id="name" name="name" type="text" required />
+
+          <label for="email">Business Email</label>
+          <input id="email" name="email" type="email" required />
+
+          <label for="service">Primary Need</label>
+          <select id="service" name="service" required>
+            <option value="">Select one</option>
+            <option value="website">Website Development</option>
+            <option value="crm">CRM Setup</option>
+            <option value="process">Process Improvement</option>
+            <option value="combo">Combination of Services</option>
+          </select>
+
+          <label for="message">Project Details</label>
+          <textarea id="message" name="message" rows="5" placeholder="What are you trying to improve?" required></textarea>
+
+          <button class="cta" type="submit">Send Request</button>
+          <p class="form-note" id="formNote" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-wrap">
+      <p>© <span id="year"></span> Northstar Web Systems</p>
+      <p>Websites | CRM | Process Improvement</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
